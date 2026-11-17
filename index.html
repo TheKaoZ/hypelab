@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- RESERVADO: endereço canônico (link rel="canonical" e og:url) quando o domínio da Hype Lab for comprado. -->
+<title>Hype Lab: vídeos de empresas para as redes sociais</title>
+<meta name="description" content="Hype Lab: gravação e edição de vídeos de empresas para as redes sociais. Orçamento pelo WhatsApp.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<!-- RESERVADO: esta linha existe só na prévia, para o Google não guardar a página com os espaços vazios. Tirar ao publicar no domínio. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F7F4EF">
+<!-- CSP: tudo vem do próprio site (fontes, estilos, imagens e vídeos), mais o que o Meta Pixel usa.
+     script-src connect.facebook.net: o script do pixel e a configuração dele.
+     img-src www.facebook.com: o envio dos eventos, que sai como imagem.
+     connect-src www.facebook.com: o mesmo envio, quando o evento fica grande demais para imagem (sendBeacon).
+     style-src sem 'unsafe-inline': nenhum atributo style no HTML; o JavaScript pode mudar element.style. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://connect.facebook.net; style-src 'self'; font-src 'self'; img-src 'self' data: https://www.facebook.com; media-src 'self'; connect-src https://www.facebook.com; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hype Lab">
+<meta property="og:title" content="Hype Lab: vídeos de empresas para as redes sociais">
+<meta property="og:description" content="Gravação e edição de vídeos de empresas para as redes sociais. Orçamento pelo WhatsApp.">
+<!-- RESERVADO: og:image (imagem de 1200 x 630 com a marca) e o ícone da aba (favicon) feitos a partir da logo. -->
+<script src="js/inicio.js"></script>
+<link rel="preload" href="fonts/syne.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/topo.css">
+<link rel="stylesheet" href="css/portfolio.css">
+<link rel="stylesheet" href="css/blocos.css">
+<script src="js/site.js" defer></script>
+<script src="js/topo.js" defer></script>
+<script src="js/portfolio.js" defer></script>
+<script src="js/orcamento.js" defer></script>
+</head>
+<body>
+
+<a class="so-leitor" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="topo-site">
+  <div class="wrap">
+    <!-- RESERVADO: trocar o nome em texto pela logo da Hype Lab (SVG ou PNG com fundo transparente). -->
+    <a class="marca" href="#inicio">Hype Lab</a>
+    <nav class="menu" id="menu" aria-label="Menu principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#perguntas">Perguntas</a>
+      <!-- RESERVADO: endereço do site da Creative Circuit quando o domínio for comprado. Até lá, leva à seção da parceria. -->
+      <a class="parceira" href="#parceria">Creative Circuit <small>Parceira</small></a>
+      <a class="btn" href="#contato">Pedir orçamento</a>
+    </nav>
+    <a class="btn btn-topo" href="#contato">Pedir orçamento</a>
+    <button class="botao-menu" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="icone" aria-hidden="true"></span><span class="so-leitor">Menu</span>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<section class="escura" id="inicio" aria-labelledby="inicio-titulo">
+
+  <!-- Fundo: desenho de cacau com brilho nude em movimento lento. Fica atrás do vídeo quando ele chegar. -->
+  <div class="tp-fundo" aria-hidden="true">
+    <div class="tp-brilho tp-brilho-1"></div>
+    <div class="tp-brilho tp-brilho-2"></div>
+    <div class="tp-grao"></div>
+    <!-- RESERVADO: vídeo horizontal do topo (MP4, 15 a 30 s, sem som, de preferência até 8 MB) com o nome exato
+         video/topo.mp4, e a imagem de capa img/topo-poster.jpg (JPG, 1920 x 1080), que aparece antes do vídeo
+         carregar e fica parada para quem pede menos movimento. Ao receber os arquivos: descomentar o bloco abaixo
+         (o js/topo.js já cuida de pausar, tocar e do movimento reduzido) e apagar o selo "Vídeo do topo" mais abaixo.
+    <video class="tp-video" autoplay muted loop playsinline preload="metadata" poster="img/topo-poster.jpg" tabindex="-1" disablepictureinpicture>
+      <source src="video/topo.mp4" type="video/mp4">
+    </video>
+    -->
+  </div>
+  <div class="tp-escurecer" aria-hidden="true"></div>
+
+  <!-- Selo do espaço do vídeo: some junto com o comentário acima quando o vídeo chegar. -->
+  <div class="wrap tp-selo-area" aria-hidden="true">
+    <div class="tp-selo">
+      <span class="tp-play"></span>
+      <span class="reservado curto" data-falta="Vídeo do topo"></span>
+    </div>
+  </div>
+
+  <div class="wrap tp-conteudo">
+    <!-- RESERVADO: texto provisório (rótulo, título, frase de apoio e os rótulos dos números), confirmar com a Hype Lab. -->
+    <span class="rotulo" data-surge>Agência de vídeo</span>
+    <h1 id="inicio-titulo" data-surge>Vídeos de empresas para as <span class="tp-destaque">redes sociais</span></h1>
+    <p class="lede" data-surge>A Hype Lab grava e edita os vídeos da sua empresa. Você pede o orçamento e a conversa continua pelo WhatsApp.</p>
+    <div class="acoes" data-surge>
+      <a class="btn" href="#contato">Pedir orçamento</a>
+      <a class="btn contorno" href="#portfolio">Ver portfólio</a>
+    </div>
+
+    <!-- RESERVADO: os 4 números da Hype Lab (vídeos entregues, empresas atendidas, anos de trabalho, visualizações).
+         Como preencher cada um: no <strong class="tp-valor">, colocar o número em data-valor (só dígitos, por exemplo
+         data-valor="120"), apagar o <span class="reservado"> de dentro e, se precisar, juntar data-prefixo="+" ou
+         data-sufixo=" mil" (e data-decimais="1" para casas decimais). O js/topo.js faz o número contar de 0 até o valor
+         quando aparece na tela, e mostra o valor direto para quem pede menos movimento. Trocar também o rótulo
+         se a Hype Lab preferir outro. Os rótulos de hoje são provisórios. -->
+    <ul class="tp-numeros" data-surge>
+      <li>
+        <strong class="tp-valor" data-valor=""><span class="reservado curto" data-falta="Número"></span></strong>
+        <span class="tp-legenda">Vídeos entregues</span>
+      </li>
+      <li>
+        <strong class="tp-valor" data-valor=""><span class="reservado curto" data-falta="Número"></span></strong>
+        <span class="tp-legenda">Empresas atendidas</span>
+      </li>
+      <li>
+        <strong class="tp-valor" data-valor=""><span class="reservado curto" data-falta="Número"></span></strong>
+        <span class="tp-legenda">Anos de trabalho</span>
+      </li>
+      <li>
+        <strong class="tp-valor" data-valor=""><span class="reservado curto" data-falta="Número"></span></strong>
+        <span class="tp-legenda">Visualizações</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="tp-logos" id="clientes" aria-labelledby="clientes-titulo">
+  <div class="wrap">
+    <!-- RESERVADO: título provisório da faixa de logos, confirmar com a Hype Lab. -->
+    <h2 class="rotulo" id="clientes-titulo">Empresas atendidas</h2>
+  </div>
+  <!-- RESERVADO: logos dos clientes em SVG ou PNG com fundo transparente (de preferência em um só tom, na horizontal),
+       com a autorização escrita de cada cliente para mostrar a marca. Nomes sugeridos: img/logos/cliente-1.svg,
+       img/logos/cliente-2.svg e assim por diante. Para cada logo: trocar o <span>Logo</span> por
+       <img src="img/logos/cliente-1.svg" alt="Logo da empresa X" width="160" height="64"> na primeira lista e repetir
+       a mesma imagem com alt="" na cópia (a segunda lista, que fica escondida do leitor de tela). Com mais ou menos
+       de 6 logos, repetir ou remover os <li> nas duas listas. -->
+  <div class="tp-janela">
+    <div class="tp-trilho">
+      <ul class="tp-lista">
+        <li class="tp-logo"><span>Logo</span></li>
+        <li class="tp-logo"><span>Logo</span></li>
+        <li class="tp-logo"><span>Logo</span></li>
+        <li class="tp-logo"><span>Logo</span></li>
+        <li class="tp-logo"><span>Logo</span></li>
+        <li class="tp-logo"><span>Logo</span></li>
+      </ul>
+      <!-- Cópia da lista para emendar o movimento sem salto; escondida do leitor de tela. -->
+      <ul class="tp-lista" aria-hidden="true">
+        <li class="tp-logo"><span>Logo</span></li>
+        <li class="tp-logo"><span>Logo</span></li>
+        <li class="tp-logo"><span>Logo</span></li>
+        <li class="tp-logo"><span>Logo</span></li>
+        <li class="tp-logo"><span>Logo</span></li>
+        <li class="tp-logo"><span>Logo</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="secao" id="para-quem">
+  <div class="wrap">
+    <div class="cabeca-secao" data-surge>
+      <span class="rotulo">Para quem é</span>
+      <h2>Para empresas que precisam de vídeo</h2>
+      <p class="lede">Quatro situações em que a gravação e a edição ajudam.</p>
+    </div>
+    <!-- RESERVADO: texto provisório, confirmar com a Hype Lab (as quatro situações de empresa atendidas). -->
+    <ul class="grade duas bl-situacoes">
+      <li class="cartao bl-situacao" data-surge>
+        <span class="bl-marca" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+        </span>
+        <div>
+          <h3>Postar com frequência</h3>
+          <p>A empresa quer publicar vídeos toda semana e não tem tempo de gravar.</p>
+        </div>
+      </li>
+      <li class="cartao bl-situacao" data-surge>
+        <span class="bl-marca" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+        </span>
+        <div>
+          <h3>Perfil parado</h3>
+          <p>O perfil da empresa está sem publicações novas e precisa voltar a ter movimento.</p>
+        </div>
+      </li>
+      <li class="cartao bl-situacao" data-surge>
+        <span class="bl-marca" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+        </span>
+        <div>
+          <h3>Lançamento</h3>
+          <p>Um produto ou serviço novo vai ser apresentado e precisa de vídeos para a divulgação.</p>
+        </div>
+      </li>
+      <li class="cartao bl-situacao" data-surge>
+        <span class="bl-marca" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+        </span>
+        <div>
+          <h3>Vídeos sem edição</h3>
+          <p>A empresa já grava, mas ninguém edita os vídeos para os Reels e os Stories.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="secao areia" id="servicos">
+  <div class="wrap">
+    <div class="cabeca-secao" data-surge>
+      <span class="rotulo">Serviços</span>
+      <h2>O que a Hype Lab faz</h2>
+      <p class="lede">Da gravação na empresa à postagem nas redes sociais.</p>
+    </div>
+    <!-- RESERVADO: lista oficial de serviços da Hype Lab. Os três cartões abaixo são provisórios, confirmar com a Hype Lab. -->
+    <div class="grade tres">
+      <article class="cartao bl-servico" data-surge>
+        <span class="bl-icone" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="13" height="11" rx="2.5"/><path d="M16 11l5-3v8l-5-3"/></svg>
+        </span>
+        <h3>Gravação de vídeos</h3>
+        <p>A equipe vai até a empresa do cliente e grava os vídeos no local.</p>
+        <a class="link-seta" href="#contato">Pedir orçamento <span aria-hidden="true">→</span><span class="so-leitor"> de gravação de vídeos</span></a>
+      </article>
+      <article class="cartao bl-servico" data-surge>
+        <span class="bl-icone" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="M8 8.5L20 18M8 15.5L20 6"/></svg>
+        </span>
+        <h3>Edição para Reels e Stories</h3>
+        <p>Os vídeos gravados são editados no formato das redes sociais.</p>
+        <a class="link-seta" href="#contato">Pedir orçamento <span aria-hidden="true">→</span><span class="so-leitor"> de edição de vídeos</span></a>
+      </article>
+      <article class="cartao bl-servico" data-surge>
+        <span class="bl-icone" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+        </span>
+        <h3>Gestão das redes sociais</h3>
+        <p>Planejamento do conteúdo e postagem dos vídeos nas redes da empresa.</p>
+        <a class="link-seta" href="#contato">Pedir orçamento <span aria-hidden="true">→</span><span class="so-leitor"> de gestão das redes sociais</span></a>
+      </article>
+    </div>
+    <div class="reservado bl-lista-oficial" data-falta="Lista oficial de serviços da Hype Lab" data-surge></div>
+  </div>
+</section>
+
+<section class="secao" id="como-funciona">
+  <div class="wrap">
+    <div class="cabeca-secao" data-surge>
+      <span class="rotulo">Como funciona</span>
+      <h2>As etapas do trabalho</h2>
+      <p class="lede">Do primeiro contato à entrega dos vídeos, em quatro passos.</p>
+    </div>
+    <!-- RESERVADO: texto provisório, confirmar com a Hype Lab (as etapas reais do trabalho). -->
+    <ol class="bl-etapas">
+      <li class="bl-etapa" data-surge>
+        <span class="bl-num" aria-hidden="true"></span>
+        <h3>Conversa e orçamento</h3>
+        <p>A empresa conta o que precisa pelo WhatsApp e recebe o orçamento.</p>
+      </li>
+      <li class="bl-etapa" data-surge>
+        <span class="bl-num" aria-hidden="true"></span>
+        <h3>Planejamento</h3>
+        <p>Definição do que será gravado e de como os vídeos serão usados.</p>
+      </li>
+      <li class="bl-etapa" data-surge>
+        <span class="bl-num" aria-hidden="true"></span>
+        <h3>Gravação</h3>
+        <p>A equipe grava os vídeos na empresa.</p>
+      </li>
+      <li class="bl-etapa" data-surge>
+        <span class="bl-num" aria-hidden="true"></span>
+        <h3>Edição e entrega</h3>
+        <p>Os vídeos são editados e entregues para a postagem.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- PORTFÓLIO: carrossel de vídeos em pé. O comportamento está em js/portfolio.js e o estilo em css/portfolio.css. -->
+<section class="secao escura" id="portfolio" aria-labelledby="portfolio-titulo">
+  <div class="wrap">
+    <div class="cabeca-secao" data-surge>
+      <span class="rotulo">Portfólio</span>
+      <h2 id="portfolio-titulo">Vídeos para redes sociais</h2>
+      <!-- RESERVADO: texto provisório, confirmar com a Hype Lab -->
+      <p class="lede">Vídeos verticais, no formato dos Reels, gravados e editados pela Hype Lab para empresas. Há mais vídeos no Instagram @hypelaab.</p>
+    </div>
+  </div>
+
+  <div class="pf-carrossel" role="region" aria-roledescription="carrossel" aria-label="Vídeos do portfólio" data-surge>
+    <ul class="pf-pista" tabindex="0" aria-label="Vídeos">
+      <li class="pf-cartao">
+        <!-- RESERVADO: vídeo 1 do portfólio. Formato: MP4 em pé 9:16 (720 x 1280), H.264 com áudio AAC, leve (de preferência abaixo de 10 MB), com o nome video/portfolio-1.mp4, e a imagem de capa (poster) em JPG 720 x 1280 com o nome img/portfolio-1.jpg. Quando os arquivos chegarem, trocar o <div class="pf-vazio"> abaixo por:
+        <div class="pf-video">
+          <video muted playsinline loop preload="none" poster="img/portfolio-1.jpg" src="video/portfolio-1.mp4" aria-label="Vídeo 1 do portfólio"></video>
+          <button class="pf-play" type="button" aria-label="Reproduzir vídeo 1"><span class="pf-icone-play" aria-hidden="true"></span></button>
+          <button class="pf-som" type="button" aria-pressed="false" aria-label="Som do vídeo 1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="pf-onda" d="M16.5 9a4 4 0 0 1 0 6M19 6.5a8 8 0 0 1 0 11"/><path class="pf-corte" d="M17 9.5l5 5M22 9.5l-5 5"/></svg></button>
+        </div>
+        -->
+        <div class="pf-vazio">
+          <span class="pf-etiqueta">Vídeo 1</span>
+          <span class="pf-icone-play" aria-hidden="true"></span>
+          <span class="pf-legenda">Vídeo em pé, 9:16</span>
+        </div>
+      </li>
+      <li class="pf-cartao">
+        <!-- RESERVADO: vídeo 2 do portfólio. Formato: MP4 em pé 9:16 (720 x 1280), H.264 com áudio AAC, leve (de preferência abaixo de 10 MB), com o nome video/portfolio-2.mp4, e a imagem de capa (poster) em JPG 720 x 1280 com o nome img/portfolio-2.jpg. Quando os arquivos chegarem, trocar o <div class="pf-vazio"> abaixo por:
+        <div class="pf-video">
+          <video muted playsinline loop preload="none" poster="img/portfolio-2.jpg" src="video/portfolio-2.mp4" aria-label="Vídeo 2 do portfólio"></video>
+          <button class="pf-play" type="button" aria-label="Reproduzir vídeo 2"><span class="pf-icone-play" aria-hidden="true"></span></button>
+          <button class="pf-som" type="button" aria-pressed="false" aria-label="Som do vídeo 2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="pf-onda" d="M16.5 9a4 4 0 0 1 0 6M19 6.5a8 8 0 0 1 0 11"/><path class="pf-corte" d="M17 9.5l5 5M22 9.5l-5 5"/></svg></button>
+        </div>
+        -->
+        <div class="pf-vazio">
+          <span class="pf-etiqueta">Vídeo 2</span>
+          <span class="pf-icone-play" aria-hidden="true"></span>
+          <span class="pf-legenda">Vídeo em pé, 9:16</span>
+        </div>
+      </li>
+      <li class="pf-cartao">
+        <!-- RESERVADO: vídeo 3 do portfólio. Formato: MP4 em pé 9:16 (720 x 1280), H.264 com áudio AAC, leve (de preferência abaixo de 10 MB), com o nome video/portfolio-3.mp4, e a imagem de capa (poster) em JPG 720 x 1280 com o nome img/portfolio-3.jpg. Quando os arquivos chegarem, trocar o <div class="pf-vazio"> abaixo por:
+        <div class="pf-video">
+          <video muted playsinline loop preload="none" poster="img/portfolio-3.jpg" src="video/portfolio-3.mp4" aria-label="Vídeo 3 do portfólio"></video>
+          <button class="pf-play" type="button" aria-label="Reproduzir vídeo 3"><span class="pf-icone-play" aria-hidden="true"></span></button>
+          <button class="pf-som" type="button" aria-pressed="false" aria-label="Som do vídeo 3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="pf-onda" d="M16.5 9a4 4 0 0 1 0 6M19 6.5a8 8 0 0 1 0 11"/><path class="pf-corte" d="M17 9.5l5 5M22 9.5l-5 5"/></svg></button>
+        </div>
+        -->
+        <div class="pf-vazio">
+          <span class="pf-etiqueta">Vídeo 3</span>
+          <span class="pf-icone-play" aria-hidden="true"></span>
+          <span class="pf-legenda">Vídeo em pé, 9:16</span>
+        </div>
+      </li>
+      <li class="pf-cartao">
+        <!-- RESERVADO: vídeo 4 do portfólio. Formato: MP4 em pé 9:16 (720 x 1280), H.264 com áudio AAC, leve (de preferência abaixo de 10 MB), com o nome video/portfolio-4.mp4, e a imagem de capa (poster) em JPG 720 x 1280 com o nome img/portfolio-4.jpg. Quando os arquivos chegarem, trocar o <div class="pf-vazio"> abaixo por:
+        <div class="pf-video">
+          <video muted playsinline loop preload="none" poster="img/portfolio-4.jpg" src="video/portfolio-4.mp4" aria-label="Vídeo 4 do portfólio"></video>
+          <button class="pf-play" type="button" aria-label="Reproduzir vídeo 4"><span class="pf-icone-play" aria-hidden="true"></span></button>
+          <button class="pf-som" type="button" aria-pressed="false" aria-label="Som do vídeo 4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="pf-onda" d="M16.5 9a4 4 0 0 1 0 6M19 6.5a8 8 0 0 1 0 11"/><path class="pf-corte" d="M17 9.5l5 5M22 9.5l-5 5"/></svg></button>
+        </div>
+        -->
+        <div class="pf-vazio">
+          <span class="pf-etiqueta">Vídeo 4</span>
+          <span class="pf-icone-play" aria-hidden="true"></span>
+          <span class="pf-legenda">Vídeo em pé, 9:16</span>
+        </div>
+      </li>
+      <li class="pf-cartao">
+        <!-- RESERVADO: vídeo 5 do portfólio. Formato: MP4 em pé 9:16 (720 x 1280), H.264 com áudio AAC, leve (de preferência abaixo de 10 MB), com o nome video/portfolio-5.mp4, e a imagem de capa (poster) em JPG 720 x 1280 com o nome img/portfolio-5.jpg. Quando os arquivos chegarem, trocar o <div class="pf-vazio"> abaixo por:
+        <div class="pf-video">
+          <video muted playsinline loop preload="none" poster="img/portfolio-5.jpg" src="video/portfolio-5.mp4" aria-label="Vídeo 5 do portfólio"></video>
+          <button class="pf-play" type="button" aria-label="Reproduzir vídeo 5"><span class="pf-icone-play" aria-hidden="true"></span></button>
+          <button class="pf-som" type="button" aria-pressed="false" aria-label="Som do vídeo 5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="pf-onda" d="M16.5 9a4 4 0 0 1 0 6M19 6.5a8 8 0 0 1 0 11"/><path class="pf-corte" d="M17 9.5l5 5M22 9.5l-5 5"/></svg></button>
+        </div>
+        -->
+        <div class="pf-vazio">
+          <span class="pf-etiqueta">Vídeo 5</span>
+          <span class="pf-icone-play" aria-hidden="true"></span>
+          <span class="pf-legenda">Vídeo em pé, 9:16</span>
+        </div>
+      </li>
+      <li class="pf-cartao">
+        <!-- RESERVADO: vídeo 6 do portfólio. Formato: MP4 em pé 9:16 (720 x 1280), H.264 com áudio AAC, leve (de preferência abaixo de 10 MB), com o nome video/portfolio-6.mp4, e a imagem de capa (poster) em JPG 720 x 1280 com o nome img/portfolio-6.jpg. Quando os arquivos chegarem, trocar o <div class="pf-vazio"> abaixo por:
+        <div class="pf-video">
+          <video muted playsinline loop preload="none" poster="img/portfolio-6.jpg" src="video/portfolio-6.mp4" aria-label="Vídeo 6 do portfólio"></video>
+          <button class="pf-play" type="button" aria-label="Reproduzir vídeo 6"><span class="pf-icone-play" aria-hidden="true"></span></button>
+          <button class="pf-som" type="button" aria-pressed="false" aria-label="Som do vídeo 6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="pf-onda" d="M16.5 9a4 4 0 0 1 0 6M19 6.5a8 8 0 0 1 0 11"/><path class="pf-corte" d="M17 9.5l5 5M22 9.5l-5 5"/></svg></button>
+        </div>
+        -->
+        <div class="pf-vazio">
+          <span class="pf-etiqueta">Vídeo 6</span>
+          <span class="pf-icone-play" aria-hidden="true"></span>
+          <span class="pf-legenda">Vídeo em pé, 9:16</span>
+        </div>
+      </li>
+    </ul>
+    <div class="wrap pf-controles">
+      <p class="pf-contador"><span class="so-leitor">Mostrando </span><span class="pf-contagem">1 de 6</span></p>
+      <div class="pf-barra" aria-hidden="true"><span class="pf-barra-marca"></span></div>
+      <div class="pf-botoes">
+        <button class="pf-seta pf-anterior" type="button" aria-label="Vídeo anterior" aria-disabled="true"><span class="pf-seta-icone" aria-hidden="true"></span></button>
+        <button class="pf-seta pf-proximo" type="button" aria-label="Próximo vídeo"><span class="pf-seta-icone" aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="acoes" data-surge>
+      <a class="btn" href="https://www.instagram.com/hypelaab/" target="_blank" rel="noopener noreferrer">Ver mais no Instagram<span class="so-leitor"> (abre em outra aba)</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- TRABALHOS: posts para redes sociais, filtrados por formato. Sem JavaScript, todos aparecem. -->
+<section class="secao" id="trabalhos" aria-labelledby="trabalhos-titulo">
+  <div class="wrap">
+    <div class="cabeca-secao" data-surge>
+      <span class="rotulo">Trabalhos</span>
+      <h2 id="trabalhos-titulo">Posts para redes sociais</h2>
+      <!-- RESERVADO: texto provisório, confirmar com a Hype Lab -->
+      <p class="lede">Posts, carrosséis e stories criados pela Hype Lab para empresas.</p>
+    </div>
+
+    <!-- RESERVADO: filtros provisórios (Reels, Carrossel, Stories). Trocar pelos formatos que a Hype Lab realmente faz. Cada botão leva data-filtro com o mesmo texto do data-categoria dos posts. Para marcar a categoria de uma imagem, escrever data-categoria no item da lista: data-categoria="reels". Um post em mais de um formato leva os nomes separados por espaço: data-categoria="reels stories". -->
+    <div class="tr-filtros" role="group" aria-label="Filtrar posts por formato" data-surge>
+      <button class="tr-filtro" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+      <button class="tr-filtro" type="button" data-filtro="reels" aria-pressed="false">Reels</button>
+      <button class="tr-filtro" type="button" data-filtro="carrossel" aria-pressed="false">Carrossel</button>
+      <button class="tr-filtro" type="button" data-filtro="stories" aria-pressed="false">Stories</button>
+    </div>
+    <p class="so-leitor tr-status" role="status" aria-live="polite"></p>
+
+    <ul class="tr-grade" data-surge>
+      <li class="tr-item" data-categoria="reels">
+        <!-- RESERVADO: imagem do post 1 (Reels), JPG 1080 x 1350, com o nome img/trabalhos/trabalho-1.jpg. Quando chegar, trocar o <div class="tr-vazio"> abaixo por: <img src="img/trabalhos/trabalho-1.jpg" width="1080" height="1350" loading="lazy" alt="Descrever o post em uma frase"> -->
+        <div class="tr-vazio">
+          <span class="tr-etiqueta">Post 1</span>
+          <span class="tr-icone" aria-hidden="true"></span>
+          <span class="tr-legenda"><strong>Reels</strong>Imagem 4:5</span>
+        </div>
+      </li>
+      <li class="tr-item" data-categoria="carrossel">
+        <!-- RESERVADO: imagem do post 2 (Carrossel), JPG 1080 x 1350, com o nome img/trabalhos/trabalho-2.jpg. Quando chegar, trocar o <div class="tr-vazio"> abaixo por: <img src="img/trabalhos/trabalho-2.jpg" width="1080" height="1350" loading="lazy" alt="Descrever o post em uma frase"> -->
+        <div class="tr-vazio">
+          <span class="tr-etiqueta">Post 2</span>
+          <span class="tr-icone" aria-hidden="true"></span>
+          <span class="tr-legenda"><strong>Carrossel</strong>Imagem 4:5</span>
+        </div>
+      </li>
+      <li class="tr-item" data-categoria="stories">
+        <!-- RESERVADO: imagem do post 3 (Stories), JPG 1080 x 1350, com o nome img/trabalhos/trabalho-3.jpg. Quando chegar, trocar o <div class="tr-vazio"> abaixo por: <img src="img/trabalhos/trabalho-3.jpg" width="1080" height="1350" loading="lazy" alt="Descrever o post em uma frase"> -->
+        <div class="tr-vazio">
+          <span class="tr-etiqueta">Post 3</span>
+          <span class="tr-icone" aria-hidden="true"></span>
+          <span class="tr-legenda"><strong>Stories</strong>Imagem 4:5</span>
+        </div>
+      </li>
+      <li class="tr-item" data-categoria="reels">
+        <!-- RESERVADO: imagem do post 4 (Reels), JPG 1080 x 1350, com o nome img/trabalhos/trabalho-4.jpg. Quando chegar, trocar o <div class="tr-vazio"> abaixo por: <img src="img/trabalhos/trabalho-4.jpg" width="1080" height="1350" loading="lazy" alt="Descrever o post em uma frase"> -->
+        <div class="tr-vazio">
+          <span class="tr-etiqueta">Post 4</span>
+          <span class="tr-icone" aria-hidden="true"></span>
+          <span class="tr-legenda"><strong>Reels</strong>Imagem 4:5</span>
+        </div>
+      </li>
+      <li class="tr-item" data-categoria="carrossel">
+        <!-- RESERVADO: imagem do post 5 (Carrossel), JPG 1080 x 1350, com o nome img/trabalhos/trabalho-5.jpg. Quando chegar, trocar o <div class="tr-vazio"> abaixo por: <img src="img/trabalhos/trabalho-5.jpg" width="1080" height="1350" loading="lazy" alt="Descrever o post em uma frase"> -->
+        <div class="tr-vazio">
+          <span class="tr-etiqueta">Post 5</span>
+          <span class="tr-icone" aria-hidden="true"></span>
+          <span class="tr-legenda"><strong>Carrossel</strong>Imagem 4:5</span>
+        </div>
+      </li>
+      <li class="tr-item" data-categoria="stories">
+        <!-- RESERVADO: imagem do post 6 (Stories), JPG 1080 x 1350, com o nome img/trabalhos/trabalho-6.jpg. Quando chegar, trocar o <div class="tr-vazio"> abaixo por: <img src="img/trabalhos/trabalho-6.jpg" width="1080" height="1350" loading="lazy" alt="Descrever o post em uma frase"> -->
+        <div class="tr-vazio">
+          <span class="tr-etiqueta">Post 6</span>
+          <span class="tr-icone" aria-hidden="true"></span>
+          <span class="tr-legenda"><strong>Stories</strong>Imagem 4:5</span>
+        </div>
+      </li>
+      <li class="tr-item" data-categoria="reels">
+        <!-- RESERVADO: imagem do post 7 (Reels), JPG 1080 x 1350, com o nome img/trabalhos/trabalho-7.jpg. Quando chegar, trocar o <div class="tr-vazio"> abaixo por: <img src="img/trabalhos/trabalho-7.jpg" width="1080" height="1350" loading="lazy" alt="Descrever o post em uma frase"> -->
+        <div class="tr-vazio">
+          <span class="tr-etiqueta">Post 7</span>
+          <span class="tr-icone" aria-hidden="true"></span>
+          <span class="tr-legenda"><strong>Reels</strong>Imagem 4:5</span>
+        </div>
+      </li>
+      <li class="tr-item" data-categoria="carrossel">
+        <!-- RESERVADO: imagem do post 8 (Carrossel), JPG 1080 x 1350, com o nome img/trabalhos/trabalho-8.jpg. Quando chegar, trocar o <div class="tr-vazio"> abaixo por: <img src="img/trabalhos/trabalho-8.jpg" width="1080" height="1350" loading="lazy" alt="Descrever o post em uma frase"> -->
+        <div class="tr-vazio">
+          <span class="tr-etiqueta">Post 8</span>
+          <span class="tr-icone" aria-hidden="true"></span>
+          <span class="tr-legenda"><strong>Carrossel</strong>Imagem 4:5</span>
+        </div>
+      </li>
+    </ul>
+    <p class="tr-vazia nota" hidden>Nenhum post neste formato.</p>
+  </div>
+</section>
+
+<!-- RESERVADO: pacote fechado. Falta confirmar se a Hype Lab tem pacote. Se não tiver, esta seção sai inteira.
+     Se tiver, faltam: nome do pacote, itens incluídos, quantidades (por exemplo, de vídeos editados) e preço. -->
+<section class="secao areia" id="pacote">
+  <div class="wrap">
+    <div class="bl-destaque" data-surge>
+      <div class="bl-destaque-texto">
+        <span class="rotulo">Pacote</span>
+        <h2>Pacote fechado de gravação</h2>
+        <p class="bl-nome-pacote"><span class="reservado curto" data-falta="Nome do pacote"></span></p>
+        <p class="bl-preco"><span class="reservado curto" data-falta="Preço do pacote"></span></p>
+        <div class="acoes">
+          <a class="btn" href="#contato">Pedir orçamento</a>
+        </div>
+      </div>
+      <div class="bl-destaque-lista">
+        <h3>O que está incluído</h3>
+        <ul class="bl-inclui">
+          <li><span class="bl-marca" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="reservado curto" data-falta="Item incluído 1"></span></li>
+          <li><span class="bl-marca" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="reservado curto" data-falta="Item incluído 2"></span></li>
+          <li><span class="bl-marca" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="reservado curto" data-falta="Item incluído 3"></span></li>
+          <li><span class="bl-marca" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="reservado curto" data-falta="Quantidade de vídeos editados"></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao" id="sobre">
+  <div class="wrap">
+    <div class="cabeca-secao" data-surge>
+      <span class="rotulo">Sobre</span>
+      <h2>Quem faz os vídeos</h2>
+      <!-- RESERVADO: texto provisório, confirmar com a Hype Lab (parágrafo sobre a empresa). -->
+      <p class="lede">A Hype Lab grava e edita vídeos de empresas para as redes sociais. São dois sócios, que cuidam do trabalho da conversa inicial até a entrega.</p>
+    </div>
+    <div class="grade duas">
+      <article class="cartao bl-socio" data-surge>
+        <!-- RESERVADO: foto do sócio 1 em pé, proporção 4:5 (por exemplo, 800 x 1000 px), arquivo img/socio-1.jpg.
+             Marcação pronta: <img src="img/socio-1.jpg" width="800" height="1000" alt="Retrato do sócio, com o nome dele" loading="lazy"> -->
+        <div class="reservado bl-foto" data-falta="Foto do sócio 1 (img/socio-1.jpg, 4:5)"></div>
+        <!-- RESERVADO: nome, função e parágrafo do sócio 1. -->
+        <h3><span class="reservado curto" data-falta="Nome do sócio 1"></span></h3>
+        <p class="bl-funcao"><span class="reservado curto" data-falta="Função"></span></p>
+        <p><span class="reservado curto" data-falta="Parágrafo sobre o sócio 1"></span></p>
+      </article>
+      <article class="cartao bl-socio" data-surge>
+        <!-- RESERVADO: foto do sócio 2 em pé, proporção 4:5 (por exemplo, 800 x 1000 px), arquivo img/socio-2.jpg.
+             Marcação pronta: <img src="img/socio-2.jpg" width="800" height="1000" alt="Retrato do sócio, com o nome dele" loading="lazy"> -->
+        <div class="reservado bl-foto" data-falta="Foto do sócio 2 (img/socio-2.jpg, 4:5)"></div>
+        <!-- RESERVADO: nome, função e parágrafo do sócio 2. -->
+        <h3><span class="reservado curto" data-falta="Nome do sócio 2"></span></h3>
+        <p class="bl-funcao"><span class="reservado curto" data-falta="Função"></span></p>
+        <p><span class="reservado curto" data-falta="Parágrafo sobre o sócio 2"></span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="secao escura" id="parceria">
+  <div class="wrap">
+    <div class="cc-cabeca" data-surge>
+      <span class="rotulo">Parceria</span>
+      <h2>Parceria com a Creative Circuit</h2>
+      <p class="lede">As duas empresas trabalham em parceria e indicam uma à outra. Cada serviço tem orçamento próprio, feito pela empresa que o realiza.</p>
+    </div>
+
+    <!-- Serviços e exemplos iguais aos do site da Creative Circuit (B:\projetos\site-servicos). Mudou lá, muda aqui. -->
+    <article class="cc-painel" data-surge>
+      <div class="cc-marca">
+        <img src="img/creative-circuit.svg" width="52" height="52" alt="">
+        <div>
+          <h3>Creative Circuit</h3>
+          <p>Sites, sistemas web, aplicativos Android e automações.</p>
+        </div>
+      </div>
+      <ul class="cc-servicos">
+        <li>
+          <h4>Sites</h4>
+          <p>Sites de apresentação para empresas e páginas de venda de produtos.</p>
+          <p class="cc-exemplo">Exemplo: este site da Hype Lab.</p>
+        </li>
+        <li>
+          <h4>Sistemas web</h4>
+          <p>Sistemas acessados pelo navegador, no computador e no celular, com login de usuários e banco de dados.</p>
+          <p class="cc-exemplo">Exemplos: Closet, para lojas de roupas, e Pátio, para estéticas automotivas.</p>
+        </li>
+        <li>
+          <h4>Aplicativos Android</h4>
+          <p>Aplicativos para celular, com publicação na Google Play.</p>
+          <p class="cc-exemplo">Exemplo: Prato Nutri, tabela nutricional e registro das refeições.</p>
+        </li>
+        <li>
+          <h4>Automações</h4>
+          <p>Robôs que fazem tarefas repetitivas no computador, como o envio de mensagens pelo WhatsApp.</p>
+          <p class="cc-exemplo">Exemplo: WhatsRobô, envio de mensagens para listas de contatos.</p>
+        </li>
+      </ul>
+      <div class="cc-acoes">
+        <!-- RESERVADO: trocar pelo endereço do site da Creative Circuit quando o domínio for comprado. A mensagem pronta mostra que o contato veio daqui. -->
+        <a class="btn" href="https://wa.me/5562993198024?text=Ol%C3%A1.%20Vim%20pelo%20site%20da%20Hype%20Lab%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">Falar com a Creative Circuit</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- PERGUNTAS: lista com details e summary. Abre e fecha sem JavaScript. Estilo em css/portfolio.css. -->
+<section class="secao" id="perguntas" aria-labelledby="perguntas-titulo">
+  <div class="wrap">
+    <div class="pg-grade">
+      <div class="cabeca-secao" data-surge>
+        <span class="rotulo">Perguntas</span>
+        <h2 id="perguntas-titulo">Perguntas frequentes</h2>
+        <p class="lede">Respostas para as dúvidas mais comuns de quem contrata vídeos para as redes sociais.</p>
+      </div>
+
+      <div data-surge>
+        <!-- RESERVADO: respostas provisórias, confirmar com a Hype Lab. Cada espaço tracejado marca uma informação que só a Hype Lab pode dar (preço, prazo, quantidade, cidades, equipe). Trocar o espaço pelo texto confirmado. -->
+        <div class="pg-lista">
+          <details class="pg-item" open>
+            <summary><h3>Como pedir um orçamento?</h3><span class="seta" aria-hidden="true"></span></summary>
+            <div class="pg-resposta">
+              <p>Pelo formulário da seção Pedir orçamento, nesta página. Depois de preencher o nome, a empresa e o serviço, o WhatsApp abre com a mensagem pronta e o orçamento é enviado por lá.</p>
+            </div>
+          </details>
+
+          <details class="pg-item">
+            <summary><h3>Quanto custa?</h3><span class="seta" aria-hidden="true"></span></summary>
+            <div class="pg-resposta">
+              <p>O valor é informado no orçamento. Como o preço é definido: <span class="reservado curto" data-falta="Como o preço é definido"></span></p>
+            </div>
+          </details>
+
+          <details class="pg-item">
+            <summary><h3>Qual é o prazo de entrega?</h3><span class="seta" aria-hidden="true"></span></summary>
+            <div class="pg-resposta">
+              <p>O prazo de entrega dos vídeos é <span class="reservado curto" data-falta="Prazo de entrega"></span></p>
+            </div>
+          </details>
+
+          <details class="pg-item">
+            <summary><h3>Quantos vídeos estão incluídos?</h3><span class="seta" aria-hidden="true"></span></summary>
+            <div class="pg-resposta">
+              <!-- RESERVADO: se a seção do pacote sair do site, tirar também a frase com o link para #pacote. -->
+              <p>Quantidade de vídeos: <span class="reservado curto" data-falta="Quantidade de vídeos"></span> Mais informações na <a href="#pacote">seção do pacote</a>.</p>
+            </div>
+          </details>
+
+          <details class="pg-item">
+            <summary><h3>Quem grava e edita os vídeos?</h3><span class="seta" aria-hidden="true"></span></summary>
+            <div class="pg-resposta">
+              <p>A gravação e a edição são feitas pela equipe da Hype Lab. Quem grava e quem edita: <span class="reservado curto" data-falta="Quem grava e quem edita"></span></p>
+            </div>
+          </details>
+
+          <details class="pg-item">
+            <summary><h3>Em quais cidades a Hype Lab atende?</h3><span class="seta" aria-hidden="true"></span></summary>
+            <div class="pg-resposta">
+              <p>A Hype Lab atende <span class="reservado curto" data-falta="Cidades e regiões atendidas"></span> Quem está em outra cidade pode perguntar pelo WhatsApp, que abre ao enviar o formulário de orçamento.</p>
+            </div>
+          </details>
+
+          <details class="pg-item">
+            <summary><h3>A Hype Lab faz sites e aplicativos?</h3><span class="seta" aria-hidden="true"></span></summary>
+            <div class="pg-resposta">
+              <p>Esses serviços são da Creative Circuit, empresa parceira da Hype Lab: sites, sistemas web, aplicativos Android e automações. As duas empresas indicam uma à outra. <a href="#parceria">Ver a parceria</a>.</p>
+            </div>
+          </details>
+        </div>
+
+        <a class="link-seta pg-fim" href="#contato">Pedir orçamento</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao areia contato" id="contato">
+  <div class="wrap">
+    <div class="grade duas">
+      <div>
+        <span class="rotulo">Orçamento</span>
+        <h2>Pedir orçamento</h2>
+        <ol class="passos">
+          <li>Preencha o nome, a empresa e o serviço.</li>
+          <li>O WhatsApp abre com a mensagem pronta.</li>
+          <li>O orçamento é enviado pelo WhatsApp.</li>
+        </ol>
+      </div>
+      <div class="cartao">
+        <!-- data-pagina vai no evento do pixel e data-nome-pagina na mensagem. -->
+        <form class="formulario" id="form-orcamento" data-pagina="inicio" data-nome-pagina="Início" autocomplete="on">
+          <label class="campo">Nome
+            <input type="text" name="nome" autocomplete="name" required maxlength="60" pattern=".*\S.*">
+          </label>
+          <label class="campo">Nome da empresa
+            <input type="text" name="empresa" autocomplete="organization" required maxlength="60" pattern=".*\S.*">
+          </label>
+          <fieldset>
+            <legend>Serviço</legend>
+            <!-- RESERVADO: lista provisória. Trocar pelos serviços que a Hype Lab mandar (mesmos valores no js/orcamento.js). -->
+            <label class="opcao"><input type="radio" name="servico" value="video" required><span>Gravação e edição de vídeos</span></label>
+            <label class="opcao"><input type="radio" name="servico" value="redes"><span>Gestão de redes sociais</span></label>
+            <label class="opcao"><input type="radio" name="servico" value="outro"><span>Outro serviço</span></label>
+          </fieldset>
+          <button class="btn" type="submit">Enviar pelo WhatsApp</button>
+          <p class="erro-form" id="erro-form" role="alert"></p>
+          <p class="aviso-form">A mensagem só é enviada quando você toca em enviar no WhatsApp. Esta página não grava os dados do formulário.</p>
+        </form>
+        <noscript>
+          <!-- RESERVADO: link direto do WhatsApp da Hype Lab. -->
+          <p class="aviso-form">O formulário precisa de JavaScript. Também é possível falar pelo <a href="https://www.instagram.com/hypelaab/">Instagram</a>.</p>
+        </noscript>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <details class="privacidade" id="privacidade">
+    <summary>Privacidade <span class="seta" aria-hidden="true"></span></summary>
+    <div class="conteudo">
+      <p>O formulário não envia dados para este site. Ele abre o WhatsApp com a mensagem pronta.</p>
+      <p>Com os cookies aceitos, a página usa o Meta Pixel, da Meta, para medir as visitas e os pedidos de orçamento que vêm dos anúncios no Facebook e no Instagram. O nome e a empresa digitados no formulário não são enviados à Meta. Com os cookies recusados, o Meta Pixel não é carregado.</p>
+      <p id="escolha-cookies">A escolha fica salva neste navegador. <button type="button" class="link-botao" id="rever-cookies">Rever a escolha de cookies</button></p>
+    </div>
+  </details>
+</div>
+
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div class="grade">
+      <div>
+        <div class="marca">Hype Lab</div>
+        <p>Gravação e edição de vídeos de empresas para as redes sociais.</p>
+      </div>
+      <div>
+        <h3>Página</h3>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#trabalhos">Trabalhos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#perguntas">Perguntas</a></li>
+          <li><a href="#privacidade">Privacidade</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/hypelaab/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <!-- RESERVADO: WhatsApp, e-mail, cidade e horário de atendimento da Hype Lab. -->
+          <li><span class="reservado curto" data-falta="WhatsApp"></span></li>
+          <li><span class="reservado curto" data-falta="E-mail"></span></li>
+          <li><span class="reservado curto" data-falta="Cidade e horário"></span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Parceria</h3>
+        <!-- RESERVADO: endereço do site da Creative Circuit quando o domínio for comprado. -->
+        <p><a href="#parceria">Creative Circuit</a>: sites, sistemas web, aplicativos Android e automações.</p>
+      </div>
+    </div>
+    <!-- RESERVADO: CNPJ da Hype Lab, se quiserem mostrar. -->
+    <p class="fim">© 2026 Hype Lab</p>
+  </div>
+</footer>
+
+<!-- Sem o número configurado no js/orcamento.js, o botão leva ao formulário. Com o número, abre o WhatsApp. -->
+<a class="flutuante" id="whatsapp-flutuante" href="#contato" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 11.5a8 8 0 0 1-11.8 7.05L4 20l1.45-4.1A8 8 0 1 1 20 11.5z"/>
+    <path d="M9 9.5c0 2.8 2.2 5 5 5"/>
+  </svg>
+</a>
+
+<div class="cookies" id="aviso-cookies" hidden>
+  <div class="wrap">
+    <p>Esta página usa cookies do Meta Pixel para medir os resultados dos anúncios. <a href="#privacidade">Privacidade</a></p>
+    <div class="acoes">
+      <button type="button" class="recusar" id="recusar-cookies">Recusar</button>
+      <button type="button" class="aceitar" id="aceitar-cookies">Aceitar</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

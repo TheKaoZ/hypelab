@@ -1,0 +1,84 @@
+/* TOPO (#inicio) E FAIXA DE LOGOS (#clientes). Tudo preso ao id ou ao prefixo tp-. */
+
+/* ---------- TOPO ---------- */
+#inicio { position: relative; isolation: isolate; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end;
+  min-height: 560px; min-height: calc(100vh - var(--altura-topo) - 24px); min-height: calc(100svh - var(--altura-topo) - 24px);
+  background: var(--cacau); color: var(--creme); }
+
+/* Fundo: camadas de baixo para cima (brilho, grão, vídeo, camada escura). */
+#inicio .tp-fundo { position: absolute; inset: 0; z-index: -2; overflow: hidden;
+  background: linear-gradient(160deg, #3B2E27 0%, var(--cacau) 55%, #201814 100%); }
+#inicio .tp-brilho { position: absolute; border-radius: 50%; will-change: transform;
+  background: radial-gradient(circle at center, rgba(217, 184, 156, .44) 0%, rgba(217, 184, 156, .16) 40%, rgba(217, 184, 156, 0) 68%); }
+#inicio .tp-brilho-1 { width: 120vmax; height: 120vmax; max-width: 1500px; max-height: 1500px; top: -62vmax; right: -52vmax; animation: tp-deriva-1 22s ease-in-out infinite alternate; }
+#inicio .tp-brilho-2 { width: 90vmax; height: 90vmax; max-width: 1100px; max-height: 1100px; bottom: -48vmax; left: -44vmax; opacity: .75; animation: tp-deriva-2 28s ease-in-out infinite alternate; }
+@keyframes tp-deriva-1 { from { transform: translate3d(0, 0, 0) scale(1); } to { transform: translate3d(-9%, 10%, 0) scale(1.12); } }
+@keyframes tp-deriva-2 { from { transform: translate3d(0, 0, 0) scale(1.05); } to { transform: translate3d(12%, -8%, 0) scale(.92); } }
+/* Grão sutil: ruído gerado por um SVG pequeno dentro do próprio CSS (a página só aceita imagens do site e data:). */
+#inicio .tp-grao { position: absolute; inset: 0; opacity: .22; mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .85 0 0 0 0 .72 0 0 0 0 .61 .9 0 0 0 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+#inicio .tp-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#inicio .tp-video.falhou { display: none; }
+
+/* Camada escura por cima de tudo, para o texto ler bem. Fica mais forte quando o vídeo já está no lugar. */
+#inicio .tp-escurecer { position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(to bottom, rgba(42, 32, 27, .15) 0%, rgba(42, 32, 27, .45) 55%, rgba(42, 32, 27, .8) 100%); }
+#inicio.com-video .tp-escurecer { background: linear-gradient(to bottom, rgba(42, 32, 27, .45) 0%, rgba(42, 32, 27, .65) 50%, rgba(42, 32, 27, .9) 100%); }
+
+/* Selo do espaço do vídeo, no canto de cima */
+#inicio .tp-selo-area { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); pointer-events: none; }
+#inicio .tp-selo { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
+#inicio .tp-play { position: relative; flex: none; width: 48px; height: 48px; border-radius: 50%; border: 1.5px solid rgba(217, 184, 156, .7); background: rgba(217, 184, 156, .10); }
+#inicio .tp-play::before { content: ''; position: absolute; top: 50%; left: 50%; margin: -9px 0 0 -6px; border-style: solid; border-width: 9px 0 9px 15px; border-color: transparent transparent transparent var(--nude); }
+
+#inicio .tp-conteudo { padding-top: 96px; padding-bottom: 32px; }
+#inicio h1 { max-width: 20ch; font-size: clamp(2.1rem, 9vw, 4.6rem); line-height: 1.04; letter-spacing: -0.025em; }
+#inicio .tp-destaque { color: var(--nude); }
+#inicio .lede { margin-top: 20px; font-size: 1.1rem; max-width: 46ch; }
+#inicio .acoes { margin-top: 30px; }
+#inicio .acoes .btn { flex: 1 1 150px; min-height: 54px; padding: 0 18px; white-space: nowrap; }
+
+/* Números */
+#inicio .tp-numeros { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 18px; margin-top: 40px; }
+#inicio .tp-numeros li { display: flex; flex-direction: column; gap: 6px; padding-top: 16px; border-top: 1px solid var(--borda-escura); }
+#inicio .tp-valor { display: flex; align-items: center; min-height: 48px; font-family: var(--fonte-titulo); font-weight: 800; font-size: clamp(2rem, 8.5vw, 3.1rem); line-height: 1; letter-spacing: -0.02em; color: var(--creme); }
+#inicio .tp-valor .reservado { min-height: 44px; padding: 0 16px; font-family: var(--fonte-texto); letter-spacing: 0; border-radius: 12px; }
+#inicio .tp-legenda { font-size: 0.9rem; line-height: 1.35; color: var(--creme-suave); }
+
+@media (min-width: 720px) {
+  #inicio { min-height: 640px; min-height: calc(100vh - var(--altura-topo) - 24px); min-height: calc(100svh - var(--altura-topo) - 24px); }
+  #inicio .tp-selo-area { left: 0; right: 0; transform: none; }
+  #inicio .tp-conteudo { padding-top: 120px; padding-bottom: 56px; }
+  #inicio .acoes .btn { flex: 0 0 auto; padding: 0 32px; }
+  #inicio .tp-numeros { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin-top: 64px; }
+}
+@media (min-width: 1024px) {
+  #inicio .tp-conteudo { padding-bottom: 72px; }
+  #inicio .lede { font-size: 1.2rem; }
+}
+
+/* ---------- FAIXA DE LOGOS ---------- */
+#clientes { background: var(--areia); padding: 36px 0 40px; overflow: hidden; }
+#clientes .rotulo { display: block; margin-bottom: 20px; text-align: center; }
+#clientes .tp-janela { overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); }
+#clientes .tp-trilho { display: flex; width: max-content; animation: tp-passa 38s linear infinite; }
+/* Cada lista tem pelo menos a largura da tela, para a emenda não aparecer em tela larga. */
+#clientes .tp-lista { --vao: 24px; list-style: none; display: flex; flex: none; align-items: center; justify-content: space-around; gap: var(--vao); min-width: 100vw; padding-right: var(--vao); }
+#clientes .tp-logo { flex: none; display: flex; align-items: center; justify-content: center; width: 160px; height: 64px; border-radius: var(--raio-pequeno); background: rgba(217, 184, 156, .38); color: var(--nude-texto); font-family: var(--fonte-titulo); font-weight: 700; font-size: 1rem; letter-spacing: .02em; }
+#clientes .tp-logo img { max-height: 100%; width: auto; object-fit: contain; }
+#clientes .tp-janela:hover .tp-trilho, #clientes .tp-janela:focus-within .tp-trilho { animation-play-state: paused; }
+@keyframes tp-passa { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }
+@media (min-width: 720px) {
+  #clientes { padding: 44px 0 52px; }
+  #clientes .tp-lista { --vao: 40px; }
+  #clientes .tp-logo { width: 190px; height: 72px; }
+}
+
+/* Movimento reduzido: sem brilho andando, sem faixa correndo. A faixa vira uma grade parada, sem a cópia. */
+@media (prefers-reduced-motion: reduce) {
+  #inicio .tp-brilho { animation: none; }
+  #clientes .tp-janela { -webkit-mask-image: none; mask-image: none; }
+  #clientes .tp-trilho { animation: none; width: auto; justify-content: center; }
+  #clientes .tp-lista { flex: 0 1 auto; flex-wrap: wrap; justify-content: center; min-width: 0; padding: 0 var(--lateral); }
+  #clientes .tp-lista[aria-hidden="true"] { display: none; }
+}

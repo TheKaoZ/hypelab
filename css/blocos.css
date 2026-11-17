@@ -1,0 +1,100 @@
+/* BLOCOS DE TEXTO: para quem é, serviços, como funciona, pacote, sobre e parceria.
+   Cada regra fica presa ao id da sua seção. Usa só as variáveis e as peças do base.css. */
+
+/* ---------- PARA QUEM É ---------- */
+#para-quem .bl-situacoes { list-style: none; }
+#para-quem .bl-situacao { display: flex; gap: 18px; align-items: flex-start; padding: 26px 24px; }
+#para-quem .bl-marca { flex: none; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: var(--cacau); color: var(--nude); }
+#para-quem .bl-marca svg { width: 20px; height: 20px; }
+#para-quem .bl-situacao h3 { margin-bottom: 8px; }
+#para-quem .bl-situacao p { color: var(--texto-suave); }
+
+/* ---------- SERVIÇOS ---------- */
+#servicos .bl-servico { display: flex; flex-direction: column; align-items: flex-start; padding: 28px 24px; }
+#servicos .bl-icone { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; margin-bottom: 20px; border-radius: 16px; background: var(--cacau); color: var(--nude); }
+#servicos .bl-icone svg { width: 28px; height: 28px; }
+#servicos .bl-servico h3 { margin-bottom: 10px; }
+#servicos .bl-servico p { color: var(--texto-suave); }
+#servicos .bl-servico .link-seta { margin-top: auto; padding-top: 20px; min-height: 44px; }
+#servicos .bl-lista-oficial { margin-top: 24px; min-height: 72px; background-color: transparent; }
+
+/* ---------- COMO FUNCIONA: linha ligando os quatro passos ---------- */
+#como-funciona .bl-etapas { list-style: none; counter-reset: etapa; display: grid; gap: 0; }
+#como-funciona .bl-etapa { counter-increment: etapa; position: relative; padding: 0 0 36px 64px; }
+#como-funciona .bl-etapa:last-child { padding-bottom: 0; }
+#como-funciona .bl-etapa::before { content: ''; position: absolute; left: 21px; top: 44px; bottom: 0; width: 2px; background: var(--borda); }
+#como-funciona .bl-etapa:last-child::before { display: none; }
+#como-funciona .bl-num { position: absolute; left: 0; top: 0; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: var(--cacau); color: var(--nude); font-family: var(--fonte-titulo); font-weight: 800; font-size: 1.1rem; }
+#como-funciona .bl-num::before { content: counter(etapa); }
+#como-funciona .bl-etapa h3 { padding-top: 9px; margin-bottom: 8px; }
+#como-funciona .bl-etapa p { color: var(--texto-suave); max-width: 40ch; }
+@media (min-width: 1024px) {
+  #como-funciona .bl-etapas { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+  #como-funciona .bl-etapa { padding: 64px 0 0 0; }
+  #como-funciona .bl-etapa::before { left: 44px; right: -24px; top: 21px; bottom: auto; width: auto; height: 2px; }
+  #como-funciona .bl-etapa:last-child::before { display: none; }
+  #como-funciona .bl-etapa h3 { padding-top: 0; }
+}
+
+/* ---------- PACOTE: cartão de destaque escuro ---------- */
+#pacote .bl-destaque { display: grid; gap: 28px; padding: 32px 24px; border-radius: 24px; background: var(--cacau); color: var(--creme); box-shadow: var(--sombra); }
+#pacote .rotulo { color: var(--nude); }
+#pacote .bl-destaque h2 { margin-bottom: 18px; }
+#pacote .bl-nome-pacote, #pacote .bl-preco { margin-top: 12px; }
+#pacote .bl-destaque .btn { background: var(--nude); color: var(--cacau); }
+#pacote .bl-destaque .reservado { border-color: var(--nude); color: var(--nude); background: repeating-linear-gradient(45deg, transparent 0 12px, rgba(217, 184, 156, .08) 12px 24px); }
+#pacote .bl-destaque .btn:focus-visible { outline-color: var(--nude); }
+#pacote .bl-destaque-lista { padding-top: 24px; border-top: 1px solid var(--borda-escura); }
+#pacote .bl-destaque-lista h3 { margin-bottom: 18px; font-size: 1.05rem; color: var(--creme-suave); }
+#pacote .bl-inclui { list-style: none; display: grid; gap: 14px; }
+#pacote .bl-inclui li { display: flex; align-items: center; gap: 14px; min-height: 36px; }
+#pacote .bl-marca { flex: none; display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; background: var(--nude); color: var(--cacau); }
+#pacote .bl-marca svg { width: 16px; height: 16px; }
+@media (min-width: 720px) {
+  #pacote .bl-destaque { padding: 48px 40px; }
+}
+@media (min-width: 1024px) {
+  #pacote .bl-destaque { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; padding: 56px 56px; align-items: center; }
+  #pacote .bl-destaque-lista { padding: 0 0 0 56px; border-top: 0; border-left: 1px solid var(--borda-escura); }
+}
+
+/* ---------- SOBRE ---------- */
+#sobre .bl-socio { display: grid; gap: 16px; align-content: start; padding: 16px 16px 28px; }
+#sobre .bl-foto { aspect-ratio: 4 / 5; min-height: 0; border-radius: 14px; background-color: var(--creme); }
+#sobre .bl-socio h3 { padding: 8px 8px 0; }
+#sobre .bl-socio p { padding: 0 8px; }
+#sobre .bl-socio .reservado.curto { max-width: 100%; text-align: left; }
+@media (min-width: 720px) {
+  #sobre .grade { max-width: 820px; }
+}
+/* Na tela larga, o texto fica à esquerda e os dois cartões à direita, sem sobrar meia tela vazia. */
+@media (min-width: 1024px) {
+  #sobre .wrap { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px; align-items: start; }
+  #sobre .grade { max-width: none; }
+}
+
+/* ---------- PARCERIA ---------- */
+/* A Creative Circuit é outra empresa: o verde da marca dela aparece só nos pontos ao lado dos serviços. */
+#parceria { --cc-verde: #3ECF8E; }
+#parceria .cc-cabeca { max-width: 680px; margin-bottom: 36px; }
+#parceria .cc-painel { background: var(--cacau-2); border: 1px solid var(--borda-escura); border-radius: var(--raio); padding: 26px 22px; }
+#parceria .cc-marca { display: flex; align-items: center; gap: 16px; padding-bottom: 22px; border-bottom: 1px solid var(--borda-escura); }
+#parceria .cc-marca img { flex: none; width: 52px; height: 52px; }
+#parceria .cc-marca h3 { font-size: 1.45rem; }
+#parceria .cc-marca p { margin-top: 4px; font-size: 0.95rem; color: var(--creme-suave); }
+#parceria .cc-servicos { list-style: none; display: grid; }
+#parceria .cc-servicos li { padding: 20px 0; border-bottom: 1px solid var(--borda-escura); }
+#parceria .cc-servicos h4 { display: flex; align-items: center; gap: 10px; font-family: var(--fonte-titulo); font-size: 1.1rem; font-weight: 700; line-height: 1.25; }
+#parceria .cc-servicos h4::before { content: ''; flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--cc-verde); }
+#parceria .cc-servicos p { margin-top: 6px; font-size: 0.95rem; color: var(--creme-suave); }
+#parceria .cc-servicos .cc-exemplo { margin-top: 10px; font-size: 0.88rem; font-weight: 600; color: var(--creme); }
+#parceria .cc-acoes { padding-top: 24px; }
+@media (min-width: 720px) {
+  #parceria .cc-painel { padding: 36px; }
+  #parceria .cc-servicos { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; }
+}
+@media (min-width: 1024px) {
+  #parceria .cc-servicos { grid-template-columns: repeat(4, minmax(0, 1fr)); border-bottom: 1px solid var(--borda-escura); }
+  #parceria .cc-servicos li { padding: 24px 0; border-bottom: 0; }
+  #parceria .cc-acoes { display: flex; justify-content: flex-end; }
+}
