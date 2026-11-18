@@ -88,7 +88,7 @@
 #parceria .cc-servicos h4::before { content: ''; flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--cc-verde); }
 #parceria .cc-servicos p { margin-top: 6px; font-size: 0.95rem; color: var(--creme-suave); }
 #parceria .cc-servicos .cc-exemplo { margin-top: 10px; font-size: 0.88rem; font-weight: 600; color: var(--creme); }
-#parceria .cc-acoes { padding-top: 24px; }
+#parceria .cc-acoes { padding-top: 24px; display: flex; flex-direction: column; gap: 12px; }
 @media (min-width: 720px) {
   #parceria .cc-painel { padding: 36px; }
   #parceria .cc-servicos { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; }
@@ -96,5 +96,5 @@
 @media (min-width: 1024px) {
   #parceria .cc-servicos { grid-template-columns: repeat(4, minmax(0, 1fr)); border-bottom: 1px solid var(--borda-escura); }
   #parceria .cc-servicos li { padding: 24px 0; border-bottom: 0; }
-  #parceria .cc-acoes { display: flex; justify-content: flex-end; }
+  #parceria .cc-acoes { flex-direction: row; flex-wrap: wrap; justify-content: flex-end; }
 }
