@@ -29,7 +29,7 @@
       }
     });
     // Ao girar o tablet ou alargar a janela, o menu largo assume e o do celular fecha.
-    var largo = window.matchMedia('(min-width: 1024px)');
+    var largo = window.matchMedia('(min-width: 1200px)');
     var aoMudar = function (m) { if (m.matches) fecharMenu(); };
     if (largo.addEventListener) largo.addEventListener('change', aoMudar);
     else if (largo.addListener) largo.addListener(aoMudar);

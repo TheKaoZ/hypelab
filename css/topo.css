@@ -9,7 +9,7 @@
 #inicio .tp-fundo { position: absolute; inset: 0; z-index: -2; overflow: hidden;
   background: linear-gradient(160deg, #3B2E27 0%, var(--cacau) 55%, #201814 100%); }
 #inicio .tp-brilho { position: absolute; border-radius: 50%; will-change: transform;
-  background: radial-gradient(circle at center, rgba(217, 184, 156, .44) 0%, rgba(217, 184, 156, .16) 40%, rgba(217, 184, 156, 0) 68%); }
+  background: radial-gradient(circle at center, rgba(227, 207, 160, .44) 0%, rgba(227, 207, 160, .16) 40%, rgba(227, 207, 160, 0) 68%); }
 #inicio .tp-brilho-1 { width: 120vmax; height: 120vmax; max-width: 1500px; max-height: 1500px; top: -62vmax; right: -52vmax; animation: tp-deriva-1 22s ease-in-out infinite alternate; }
 #inicio .tp-brilho-2 { width: 90vmax; height: 90vmax; max-width: 1100px; max-height: 1100px; bottom: -48vmax; left: -44vmax; opacity: .75; animation: tp-deriva-2 28s ease-in-out infinite alternate; }
 @keyframes tp-deriva-1 { from { transform: translate3d(0, 0, 0) scale(1); } to { transform: translate3d(-9%, 10%, 0) scale(1.12); } }
@@ -28,12 +28,12 @@
 /* Selo do espaço do vídeo, no canto de cima */
 #inicio .tp-selo-area { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); pointer-events: none; }
 #inicio .tp-selo { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
-#inicio .tp-play { position: relative; flex: none; width: 48px; height: 48px; border-radius: 50%; border: 1.5px solid rgba(217, 184, 156, .7); background: rgba(217, 184, 156, .10); }
-#inicio .tp-play::before { content: ''; position: absolute; top: 50%; left: 50%; margin: -9px 0 0 -6px; border-style: solid; border-width: 9px 0 9px 15px; border-color: transparent transparent transparent var(--nude); }
+#inicio .tp-play { position: relative; flex: none; width: 48px; height: 48px; border-radius: 50%; border: 1.5px solid rgba(227, 207, 160, .7); background: rgba(227, 207, 160, .10); }
+#inicio .tp-play::before { content: ''; position: absolute; top: 50%; left: 50%; margin: -9px 0 0 -6px; border-style: solid; border-width: 9px 0 9px 15px; border-color: transparent transparent transparent var(--dourado); }
 
 #inicio .tp-conteudo { padding-top: 96px; padding-bottom: 32px; }
 #inicio h1 { max-width: 20ch; font-size: clamp(2.1rem, 9vw, 4.6rem); line-height: 1.04; letter-spacing: -0.025em; }
-#inicio .tp-destaque { color: var(--nude); }
+#inicio .tp-destaque { color: var(--dourado); }
 #inicio .lede { margin-top: 20px; font-size: 1.1rem; max-width: 46ch; }
 #inicio .acoes { margin-top: 30px; }
 #inicio .acoes .btn { flex: 1 1 150px; min-height: 54px; padding: 0 18px; white-space: nowrap; }
@@ -64,7 +64,7 @@
 #clientes .tp-trilho { display: flex; width: max-content; animation: tp-passa 38s linear infinite; }
 /* Cada lista tem pelo menos a largura da tela, para a emenda não aparecer em tela larga. */
 #clientes .tp-lista { --vao: 24px; list-style: none; display: flex; flex: none; align-items: center; justify-content: space-around; gap: var(--vao); min-width: 100vw; padding-right: var(--vao); }
-#clientes .tp-logo { flex: none; display: flex; align-items: center; justify-content: center; width: 160px; height: 64px; border-radius: var(--raio-pequeno); background: rgba(217, 184, 156, .38); color: var(--nude-texto); font-family: var(--fonte-titulo); font-weight: 700; font-size: 1rem; letter-spacing: .02em; }
+#clientes .tp-logo { flex: none; display: flex; align-items: center; justify-content: center; width: 160px; height: 64px; border-radius: var(--raio-pequeno); background: rgba(227, 207, 160, .38); color: var(--dourado-texto); font-family: var(--fonte-titulo); font-weight: 700; font-size: 1rem; letter-spacing: .02em; }
 #clientes .tp-logo img { max-height: 100%; width: auto; object-fit: contain; }
 #clientes .tp-janela:hover .tp-trilho, #clientes .tp-janela:focus-within .tp-trilho { animation-play-state: paused; }
 @keyframes tp-passa { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }

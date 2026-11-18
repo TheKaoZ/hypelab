@@ -4,14 +4,14 @@
 /* ---------- PARA QUEM É ---------- */
 #para-quem .bl-situacoes { list-style: none; }
 #para-quem .bl-situacao { display: flex; gap: 18px; align-items: flex-start; padding: 26px 24px; }
-#para-quem .bl-marca { flex: none; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: var(--cacau); color: var(--nude); }
+#para-quem .bl-marca { flex: none; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: var(--cacau); color: var(--dourado); }
 #para-quem .bl-marca svg { width: 20px; height: 20px; }
 #para-quem .bl-situacao h3 { margin-bottom: 8px; }
 #para-quem .bl-situacao p { color: var(--texto-suave); }
 
 /* ---------- SERVIÇOS ---------- */
 #servicos .bl-servico { display: flex; flex-direction: column; align-items: flex-start; padding: 28px 24px; }
-#servicos .bl-icone { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; margin-bottom: 20px; border-radius: 16px; background: var(--cacau); color: var(--nude); }
+#servicos .bl-icone { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; margin-bottom: 20px; border-radius: 16px; background: var(--cacau); color: var(--dourado); }
 #servicos .bl-icone svg { width: 28px; height: 28px; }
 #servicos .bl-servico h3 { margin-bottom: 10px; }
 #servicos .bl-servico p { color: var(--texto-suave); }
@@ -24,7 +24,7 @@
 #como-funciona .bl-etapa:last-child { padding-bottom: 0; }
 #como-funciona .bl-etapa::before { content: ''; position: absolute; left: 21px; top: 44px; bottom: 0; width: 2px; background: var(--borda); }
 #como-funciona .bl-etapa:last-child::before { display: none; }
-#como-funciona .bl-num { position: absolute; left: 0; top: 0; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: var(--cacau); color: var(--nude); font-family: var(--fonte-titulo); font-weight: 800; font-size: 1.1rem; }
+#como-funciona .bl-num { position: absolute; left: 0; top: 0; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: var(--cacau); color: var(--dourado); font-family: var(--fonte-titulo); font-weight: 800; font-size: 1.1rem; }
 #como-funciona .bl-num::before { content: counter(etapa); }
 #como-funciona .bl-etapa h3 { padding-top: 9px; margin-bottom: 8px; }
 #como-funciona .bl-etapa p { color: var(--texto-suave); max-width: 40ch; }
@@ -38,17 +38,17 @@
 
 /* ---------- PACOTE: cartão de destaque escuro ---------- */
 #pacote .bl-destaque { display: grid; gap: 28px; padding: 32px 24px; border-radius: 24px; background: var(--cacau); color: var(--creme); box-shadow: var(--sombra); }
-#pacote .rotulo { color: var(--nude); }
+#pacote .rotulo { color: var(--dourado); }
 #pacote .bl-destaque h2 { margin-bottom: 18px; }
 #pacote .bl-nome-pacote, #pacote .bl-preco { margin-top: 12px; }
-#pacote .bl-destaque .btn { background: var(--nude); color: var(--cacau); }
-#pacote .bl-destaque .reservado { border-color: var(--nude); color: var(--nude); background: repeating-linear-gradient(45deg, transparent 0 12px, rgba(217, 184, 156, .08) 12px 24px); }
-#pacote .bl-destaque .btn:focus-visible { outline-color: var(--nude); }
+#pacote .bl-destaque .btn { background: var(--dourado); color: var(--cacau); }
+#pacote .bl-destaque .reservado { border-color: var(--dourado); color: var(--dourado); background: repeating-linear-gradient(45deg, transparent 0 12px, rgba(227, 207, 160, .08) 12px 24px); }
+#pacote .bl-destaque .btn:focus-visible { outline-color: var(--dourado); }
 #pacote .bl-destaque-lista { padding-top: 24px; border-top: 1px solid var(--borda-escura); }
 #pacote .bl-destaque-lista h3 { margin-bottom: 18px; font-size: 1.05rem; color: var(--creme-suave); }
 #pacote .bl-inclui { list-style: none; display: grid; gap: 14px; }
 #pacote .bl-inclui li { display: flex; align-items: center; gap: 14px; min-height: 36px; }
-#pacote .bl-marca { flex: none; display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; background: var(--nude); color: var(--cacau); }
+#pacote .bl-marca { flex: none; display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; background: var(--dourado); color: var(--cacau); }
 #pacote .bl-marca svg { width: 16px; height: 16px; }
 @media (min-width: 720px) {
   #pacote .bl-destaque { padding: 48px 40px; }

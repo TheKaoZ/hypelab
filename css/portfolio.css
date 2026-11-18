@@ -40,22 +40,22 @@
   #portfolio .pf-cartao { flex-basis: calc((100% - 3 * var(--pf-vao)) / 4); }
 }
 
-/* Cartão reservado: gradiente cacau e nude, ícone de play e etiqueta do que vai ali. */
+/* Cartão reservado: gradiente cacau e dourado, ícone de play e etiqueta do que vai ali. */
 #portfolio .pf-vazio {
   position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
   padding: 18px; text-align: center; color: var(--creme);
   background:
-    radial-gradient(120% 60% at 85% 0%, rgba(217, 184, 156, .38), transparent 62%),
+    radial-gradient(120% 60% at 85% 0%, rgba(227, 207, 160, .38), transparent 62%),
     linear-gradient(165deg, #6A4F3E 0%, #3B2E27 55%, #2F2420 100%);
 }
 #portfolio .pf-cartao:nth-child(3n+2) .pf-vazio {
   background:
     radial-gradient(110% 55% at 10% 100%, rgba(42, 32, 27, .55), transparent 65%),
-    linear-gradient(165deg, #D9B89C 0%, #B88F72 55%, #7A5640 100%);
+    linear-gradient(165deg, #E3CFA0 0%, #C4A764 55%, #7A5C2A 100%);
 }
 #portfolio .pf-cartao:nth-child(3n) .pf-vazio {
   background:
-    radial-gradient(100% 50% at 50% 0%, rgba(217, 184, 156, .28), transparent 65%),
+    radial-gradient(100% 50% at 50% 0%, rgba(227, 207, 160, .28), transparent 65%),
     linear-gradient(200deg, #3B2E27 0%, #5B4234 50%, #8C6046 100%);
 }
 /* Linha fina no topo e sombra embaixo, como a interface de um Reel (só decoração). */
@@ -87,7 +87,7 @@
 }
 #portfolio .pf-som:hover { background: rgba(42, 32, 27, .9); }
 #portfolio .pf-som svg { width: 24px; height: 24px; }
-#portfolio .pf-som[aria-pressed="true"] { background: var(--nude); color: var(--cacau); }
+#portfolio .pf-som[aria-pressed="true"] { background: var(--dourado); color: var(--cacau); }
 #portfolio .pf-som[aria-pressed="true"] .pf-corte, #portfolio .pf-som[aria-pressed="false"] .pf-onda { display: none; }
 /* Sem JavaScript os botões do vídeo não funcionam, então ficam escondidos. */
 html:not(.js) #portfolio .pf-play, html:not(.js) #portfolio .pf-som { display: none; }
@@ -96,15 +96,15 @@ html:not(.js) #portfolio .pf-play, html:not(.js) #portfolio .pf-som { display: n
 #portfolio .pf-controles { display: flex; align-items: center; gap: 16px; margin-top: 14px; }
 #portfolio .pf-contador { flex: none; min-width: 5.2em; font-family: var(--fonte-titulo); font-weight: 700; font-size: 1.05rem; font-variant-numeric: tabular-nums; }
 #portfolio .pf-barra { position: relative; flex: 1; height: 4px; border-radius: 4px; background: var(--borda-escura); overflow: hidden; }
-#portfolio .pf-barra-marca { position: absolute; top: 0; bottom: 0; left: 0; width: 100%; border-radius: 4px; background: var(--nude); transition: left .2s ease, width .2s ease; }
+#portfolio .pf-barra-marca { position: absolute; top: 0; bottom: 0; left: 0; width: 100%; border-radius: 4px; background: var(--dourado); transition: left .2s ease, width .2s ease; }
 #portfolio .pf-botoes { flex: none; display: flex; gap: 10px; }
 #portfolio .pf-seta {
   display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; cursor: pointer;
-  border: 1.5px solid var(--nude); background: transparent; color: var(--nude); transition: background-color .15s ease, color .15s ease, opacity .15s ease;
+  border: 1.5px solid var(--dourado); background: transparent; color: var(--dourado); transition: background-color .15s ease, color .15s ease, opacity .15s ease;
 }
-#portfolio .pf-seta:hover { background: var(--nude); color: var(--cacau); }
+#portfolio .pf-seta:hover { background: var(--dourado); color: var(--cacau); }
 #portfolio .pf-seta[aria-disabled="true"] { opacity: .35; cursor: default; }
-#portfolio .pf-seta[aria-disabled="true"]:hover { background: transparent; color: var(--nude); }
+#portfolio .pf-seta[aria-disabled="true"]:hover { background: transparent; color: var(--dourado); }
 #portfolio .pf-seta-icone { width: 10px; height: 10px; border-top: 2px solid currentColor; border-right: 2px solid currentColor; }
 #portfolio .pf-proximo .pf-seta-icone { transform: translateX(-2px) rotate(45deg); }
 #portfolio .pf-anterior .pf-seta-icone { transform: translateX(2px) rotate(-135deg); }
@@ -133,17 +133,17 @@ html:not(.js) #trabalhos .tr-filtros { display: none; }
 /* Imagem de verdade (quando os arquivos chegarem) */
 #trabalhos .tr-item > img { width: 100%; height: 100%; object-fit: cover; }
 
-/* Espaço reservado: gradiente nude (ou cacau, alternando), ícone do formato e etiqueta */
+/* Espaço reservado: gradiente dourado (ou cacau, alternando), ícone do formato e etiqueta */
 #trabalhos .tr-vazio {
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 14px; color: var(--cacau);
-  background: radial-gradient(100% 60% at 90% 0%, rgba(246, 239, 232, .55), transparent 60%), linear-gradient(160deg, #EDE2D7 0%, #D9B89C 100%);
+  background: radial-gradient(100% 60% at 90% 0%, rgba(246, 239, 232, .55), transparent 60%), linear-gradient(160deg, #F1E7D0 0%, #E3CFA0 100%);
 }
 #trabalhos .tr-item:nth-child(3n+2) .tr-vazio {
   color: var(--creme);
-  background: radial-gradient(100% 60% at 10% 0%, rgba(217, 184, 156, .3), transparent 60%), linear-gradient(160deg, #5B4234 0%, #2A201B 100%);
+  background: radial-gradient(100% 60% at 10% 0%, rgba(227, 207, 160, .3), transparent 60%), linear-gradient(160deg, #5B4234 0%, #2A201B 100%);
 }
 #trabalhos .tr-item:nth-child(3n) .tr-vazio {
-  background: radial-gradient(100% 60% at 50% 100%, rgba(246, 239, 232, .4), transparent 65%), linear-gradient(200deg, #D9B89C 0%, #B88F72 100%);
+  background: radial-gradient(100% 60% at 50% 100%, rgba(246, 239, 232, .4), transparent 65%), linear-gradient(200deg, #E3CFA0 0%, #C4A764 100%);
 }
 #trabalhos .tr-etiqueta { position: absolute; top: 12px; left: 12px; padding: 4px 11px; border-radius: 999px; background: rgba(42, 32, 27, .12); font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
 #trabalhos .tr-item:nth-child(3n+2) .tr-etiqueta { background: rgba(246, 239, 232, .16); }
@@ -176,10 +176,10 @@ html:not(.js) #trabalhos .tr-filtros { display: none; }
 #perguntas .pg-item summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; padding: 18px 0; }
 #perguntas .pg-item summary::-webkit-details-marker { display: none; }
 #perguntas .pg-item summary h3 { font-size: clamp(1.05rem, 4.2vw, 1.3rem); transition: color .15s ease; }
-#perguntas .pg-item summary:hover h3 { color: var(--nude-texto); }
+#perguntas .pg-item summary:hover h3 { color: var(--dourado-texto); }
 #perguntas .pg-resposta { padding: 0 0 24px; }
 #perguntas .pg-resposta p { max-width: 62ch; color: var(--texto-suave); }
-#perguntas .pg-resposta a { color: var(--nude-texto); font-weight: 700; }
+#perguntas .pg-resposta a { color: var(--dourado-texto); font-weight: 700; }
 #perguntas .pg-item[open] .pg-resposta { animation: pg-abre .25s ease; }
 @keyframes pg-abre { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
 #perguntas .pg-fim { margin-top: 24px; }
