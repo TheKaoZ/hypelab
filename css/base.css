@@ -100,8 +100,8 @@ h3 { font-size: 1.2rem; line-height: 1.25; }
 .topo-site { position: sticky; top: 0; z-index: 20; height: var(--altura-topo); background: rgba(247, 244, 239, .92); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-bottom: 1px solid var(--borda); }
 .topo-site .wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .topo-site .marca { flex: none; white-space: nowrap; font-size: 1.6rem; font-weight: 800; text-decoration: none; letter-spacing: -0.02em; }
-/* Logo: os dois "a" são frascos em SVG, com a largura do "a" da Syne 800 (1,08 em) e a base 0,04 em abaixo da linha do texto. */
-.marca .frasco { display: inline-block; width: 1.08em; height: .62em; vertical-align: -0.04em; }
+/* Logo: o "a" é um frasco Erlenmeyer em SVG, com 1,04 em de largura e a base 0,04 em abaixo da linha do texto. */
+.marca .frasco { display: inline-block; width: 1.04em; height: .62em; vertical-align: -0.04em; }
 .frasco-liquido { fill: var(--dourado); }
 .menu { display: none; }
 .menu a { text-decoration: none; font-weight: 600; font-size: 0.95rem; }
