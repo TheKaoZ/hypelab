@@ -37,11 +37,16 @@
 
   // ENTRADA SUAVE: blocos com data-surge aparecem quando chegam na tela.
   // Irmãos entram um pouco depois do outro, até um limite, para a grade não demorar.
+  // Com mouse, a roda pula a tela em saltos de 100 px ou mais: a entrada começa antes de o bloco
+  // chegar e o atraso entre irmãos é menor. Sem isso, a rolagem rápida no PC mostrava a tela vazia.
+  var comMouse = !!(window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches);
+  var atrasoIrmao = comMouse ? 50 : 80;
+  var limiteIrmaos = comMouse ? 3 : 5;
   var blocos = Array.prototype.slice.call(document.querySelectorAll('[data-surge]'));
   blocos.forEach(function (el) {
     var irmaos = Array.prototype.filter.call(el.parentElement.children, function (x) { return x.hasAttribute('data-surge'); });
     var posicao = irmaos.indexOf(el);
-    if (posicao > 0) el.style.transitionDelay = Math.min(posicao, 5) * 80 + 'ms';
+    if (posicao > 0) el.style.transitionDelay = Math.min(posicao, limiteIrmaos) * atrasoIrmao + 'ms';
   });
   if ('IntersectionObserver' in window) {
     var observador = new IntersectionObserver(function (entradas) {
@@ -50,7 +55,7 @@
         entrada.target.classList.add('visivel');
         observador.unobserve(entrada.target);
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    }, comMouse ? { rootMargin: '0px 0px 15% 0px', threshold: 0 } : { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
     blocos.forEach(function (el) { observador.observe(el); });
   } else {
     blocos.forEach(function (el) { el.classList.add('visivel'); });

@@ -193,6 +193,10 @@ body.com-aviso .flutuante { bottom: calc(150px + env(safe-area-inset-bottom)); }
    A classe .js no <html> vem do js/inicio.js; sem JavaScript, tudo aparece sem animação. */
 .js [data-surge] { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
 .js [data-surge].visivel { opacity: 1; transform: none; }
+/* Com mouse, a roda pula a tela em saltos: a entrada fica mais curta e começa antes de o bloco chegar (js/site.js). */
+@media (hover: hover) and (pointer: fine) {
+  .js [data-surge] { transform: translateY(12px); transition-duration: .4s; }
+}
 
 /* Quem pede menos movimento no sistema não vê animação nem rolagem suave. */
 @media (prefers-reduced-motion: reduce) {
